@@ -1,0 +1,123 @@
+body{
+  background-image: url("yengyeng.png");
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+h1{
+  color: white;
+  text-align: center;
+  text-shadow: 0px 5px 5px darkgrey; 
+}
+h2{
+  color: white;
+  text-align: center;
+  text-shadow: 0px 5px 5px darkgrey;
+}
+h3{
+  color: black;
+}
+.fa-heart{
+  color:pink;
+  align-content: center;
+}
+
+.title1{
+  color: white;
+}
+.title2{
+  color: white;
+}
+.container{
+  background-image: url("yengyeng.png");
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius:8px;
+  text-align: center;
+}
+input{
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+}
+button{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 80%;
+  max-width: 400px;
+  background: #fff5f8;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  z-index: 9999;
+  opacity: 0;
+  animation: popIn 0.4s ease forwards;
+}
+
+.card-content {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e91e63;
+}
+
+.card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.hearts::before,
+.hearts::after {
+  content: "❤";
+  position: fixed;
+  font-size: 24px;
+  animation: floatHearts 6s infinite ease-in-out;
+  opacity: 0.5;
+  color: #ff80ab;
+}
+
+.hearts::after {
+  left: 80%;
+  animation-delay: 2s;
+}
+
+.hearts::before {
+  left: 20%;
+  animation-delay: 1s;
+}
+
+@keyframes floatHearts {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
