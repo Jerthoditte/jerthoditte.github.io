@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Happy Birthday, Yengyeng!</title>
+  <script src="https://kit.fontawesome.com/80502d01d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>
+    Hello, Yengyeng!
+  </h1>
+  <marquee behavior="scroll" direction="right">
+    <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-heart"></i>
+</marquee>
+
+  <div class="container">
+    <h2>LOGIN KA MUNA, YENGYENG!</h2>
+    <form onsubmit="return login()">
+      <p id="message"></p>
+      <div class="title1">(MM/DD/YY)</div>
+      <i class="fas fa-heart"></i>
+      <input type="text" id="birthdate" placeholder="Birthdate" required><br>
+      <div class="title2">Nickname mo!</div>
+      <i class="fas fa-heart"></i>
+      <input type="password" id="nickname" placeholder="Nickname" required><br>
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+  
+<div id="dashboard" style="display: none; text-align: center;">
+  <h1>HAPPY BIRTHDAY, YENGYENG!</h1>
+  <p>You are loved more than cupcakes!</p>
+  <button onclick="showMessage()">Click for Message</button>
+  
+  <div id="surpriseMessage" style="margin-top: 20px; display: none;">
+    <p style="font-size: 18px; color: #e91e63;">
+      Yengyeng, thank you for being you — cute, funny, and full of love. 
+      May today sparkle just like your smile!  
+      I hope this small surprise made your heart a little happier!
+    </p>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <audio id="bdaySong" src="happy.mp3" autoplay></audio>
+</div>
+  <div id="surpriseCard" class="card" style="display: none;">
+  <div class="card-content">
+    <h3>Dear Yengyeng,</h3>
+    <p>
+      You're truly one of a kind! Your smile lights up the world, and you deserve all the love and surprises today.
+      Wishing you the happiest birthday ever!
+    </p>
+    <p style="margin-top: 15px;">— From someone who cares a lot</p>
+    <button onclick="closeCard()">Close</button>
+  </div>
+</div>
+  
+  <div class="hearts"></div>
+  <audio id="popSound" src="pop.mp3" preload="auto"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>
